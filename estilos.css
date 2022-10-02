@@ -4,18 +4,15 @@ body {
 }
 
 #map{
+  
     position: absolute;
-    margin-top: 120px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    z-index: 0;
+    top: 7rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
 }
 
 .titulo{
-    position: relative;
-    margin: 20px;
-    margin-left: 20px;
-
+  margin-top: 60px;
+  margin-left: 20px;
 }
-
