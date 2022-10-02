@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcadores</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js" integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
-
+    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Desarrollo en Mapas</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="marcador.html">Marcadores</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="poligono.html">Poligonos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="trazado.html">Trazados de rutas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pluginsfacebook.html">Plugin Facebook</a>
-                </li>
-            </ul>
-          </div>
-        </div>
-    </nav> 
-      <div class="titulo">
-        <h3>Marcadores en Mapas</h3>
-      </div>  
-      
-      <div id="map"></div>
-      <script type="text/javascript">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Desarrollo en Mapas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="marcador.html">Marcadores</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="poligono.html">Poligonos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="trazado.html">Trazados de rutas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="pluginsfacebook.html">Plugin Facebook</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+    <h3 class="titulo">Marcadores en Mapas</h3>
+    <div id="map"></div>
+
+    <script type="text/javascript">
         let L = window.L;
         let map = L.map('map').setView([-17.388076627346436, -66.15583054904408],19);
         L.tileLayer('https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=U5QGbesXoxR43xyCr6JB',
@@ -51,6 +51,9 @@
         let marker = L.marker([-17.388202049571518, -66.15577824596832]).addTo(map);
         marker.bindPopup("<h1>Plaza Colon</h1>").openPopup();
       </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+crossorigin="anonymous"></script>
 </body>
 </html>
